@@ -13,7 +13,7 @@ title: 电信天翼光猫TEWA-768G/TEWA-708E/tewa-1000e破解超管密码
 虽然超级管理员密码拿不到，但是普通用户的密码是直接印在光猫背面的。
 如果是windows电脑，打开cmd输入ipconfig，linux使用ifconfig，回车，查看当前网关。
 当前网关即路由器的地址：192.168.x.1，在浏览器中输入192.168.x.1，就会导航到路由器管理后台的登录界面。<font color="red">需要注意的是这个页面并不是真实的管理后台页面，真实的管理后台地址应该是 192.168.x.1:8080/login.html</font>(如下图)
-![](https://docsin.uniontech.com/wp-content/uploads/2021/03/5fbe8cb1f28c83894.png_e680.png)
+![](https://media.liulangya.xyz/images/2021/04/07/5fbe8cb1f28c83894.png_e680.png)
 此时输入用户名： useradmin 密码：光猫背面的密码
 进入普通用户权限的管理后台，登录进去之后这一步就成功了！
 <font color="red">插入U盘</font>
@@ -22,13 +22,13 @@ title: 电信天翼光猫TEWA-768G/TEWA-708E/tewa-1000e破解超管密码
 1）打开 管理→设备管理
 2）按f12打开调试工具，进入source，选择MD_Device_user.html
 3）找到sessionkey <font color="red">sessionkey很快会过期，后续操作如果出现权限异常，请回到第三部重新来，耐心点多来几次</font>
-![](https://docsin.uniontech.com/wp-content/uploads/2021/03/5fbe8cb2a1a5b425-1.png_e680-1.png)
+![](https://media.liulangya.xyz/images/2021/04/07/5fbe8cb2a1a5b425-1.png_e680-1.png)
 4）找到【快速恢复】所对应的链接（图中4所对应的位置）
-![](https://docsin.uniontech.com/wp-content/uploads/2021/03/5fbe8cb1c35fb2876.png_e680.png)
+![](https://media.liulangya.xyz/images/2021/04/07/5fbe8cb1c35fb2876.png_e680.png)
 5）用浏览器打开 链接+sessionkey，例如：http://192.168.1.1:8080/usbbackupNaNd?action=backupeble&amp;sessionKey=357535522
 如果提示<font color="red">Invlid Session Key</font>请回到步骤3）
 看到以下界面，则这一步成功
-![](https://docsin.uniontech.com/wp-content/uploads/2021/03/5fbe8cb2c910f8166.png_e680.png)
+![](https://media.liulangya.xyz/images/2021/04/07/5fbe8cb2c910f8166.png_e680.png)
 
 ## 3.获取密码
 1) USB分区选择，选中你的U盘，如果没有找到U盘，请检查格式是否是fat32
